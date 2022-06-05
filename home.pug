@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+       div Welcome TO Your Dance Academy
+       div.small Any Body Can Dance
+    section#ourMissions 
+       h2 Our missions
+       div.cards
+           h3 Dance Perfection
+           div.card-box 
+              div.card-img  
+                 img(src="/static/logo.png", alt="img")
+              div.card-content 
+                 p Dance, when you're broken open. Dance, if you've torn the bandage off. Dance in the middle of the fighting. Dance in your blood. Dance when you're perfectly free
+
+       div.cards
+           h3 Dance the way you like
+           div.card-box 
+              div.card-img  
+                 img(src="/static/pic2.png", alt="img")
+              div.card-content 
+                 p Nature is so powerful, so strong. Capturing its essence is not easy - your work becomes a dance with light and the weather. It takes you to a place within yourself
+       div.cards
+           h3 Expert Teaching
+           div.card-box 
+              div.card-img  
+                 img(src="/static/pic1.png", alt="img")
+              div.card-content 
+                 p To watch us dance is to hear our hearts speak do it big, do it right, and do it with style there are shortcuts to happiness, and dancing is one of them
+    section#sponsorsSection 
+       h2 Our sponsors 
+       div#sponsors 
+          img(src="/static/spon1.png", alt="pic")
+          img(src="/static/spon2.png", alt="pic")
+          img(src="/static/spon3.png", alt="pic")
+          img(src="/static/spon4.png", alt="pic")
+          img(src="/static/spon5.png", alt="pic")
+          img(src="/static/spon6.png", alt="pic")

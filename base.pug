@@ -1,0 +1,23 @@
+doctype html 
+html
+  head
+    title Rock Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar
+       ul 
+          div#logo  
+            img(src="/static/logoo.png")
+            | Rock Dance Academy
+          div#search 
+            input(type="text" name="title" placeholder="Search..")
+          li #[a(href="/") Home]
+          li #[a(href="/about") About]
+          li #[a(href="/classinfo") Class info]
+          li #[a(href="/services") Services] 
+          li #[a(href="/contact") Contact us]
+    block content
+    footer#footer 
+        | Copyright 2021 © rockdance.com All right reserved 
+    
